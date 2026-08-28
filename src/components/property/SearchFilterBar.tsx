@@ -1,23 +1,38 @@
 "use client";
 
-import { useId } from "react";
+import { useId, useState, type FormEvent } from "react";
+import { useRouter } from "next/navigation";
 import { Button } from "@/components/ui/Button";
+import { fieldClass, labelClass } from "@/lib/formStyles";
+import { BUY_PRICE_OPTIONS } from "@/lib/properties";
 
-const propertyTypes = ["Any Type", "House", "Condo", "Villa", "Apartment", "Land"];
-const priceRanges = ["Any Price", "Under $1M", "$1M – $3M", "$3M – $5M", "$5M+"];
-
-const fieldClass =
-  "mt-2 w-full rounded-lg border border-border bg-white px-4 py-3 text-sm text-charcoal-900 transition-colors focus-visible:outline-none focus-visible:border-gold-500";
-const labelClass = "text-xs font-semibold uppercase tracking-wider text-gray-500";
+const propertyTypes = ["Any Type", "House", "Villa", "Condo", "Apartment"];
 
 export function SearchFilterBar() {
+  const router = useRouter();
   const locationId = useId();
   const typeId = useId();
   const priceId = useId();
 
+  const [search, setSearch] = useState("");
+  const [type, setType] = useState(propertyTypes[0]);
+  const [price, setPrice] = useState(BUY_PRICE_OPTIONS[0]);
+
+  function handleSubmit(event: FormEvent<HTMLFormElement>) {
+    event.preventDefault();
+
+    const params = new URLSearchParams();
+    if (search.trim()) params.set("search", search.trim());
+    if (type !== propertyTypes[0]) params.set("type", type);
+    if (price !== BUY_PRICE_OPTIONS[0]) params.set("price", price);
+
+    const query = params.toString();
+    router.push(query ? `/properties?${query}` : "/properties");
+  }
+
   return (
     <form
-      onSubmit={(event) => event.preventDefault()}
+      onSubmit={handleSubmit}
       className="grid gap-4 rounded-2xl bg-ivory-50 p-6 shadow-elevated sm:p-8 lg:grid-cols-[2fr_1fr_1fr_auto] lg:items-end lg:gap-6"
     >
       <div>
@@ -27,7 +42,9 @@ export function SearchFilterBar() {
         <input
           id={locationId}
           type="text"
-          placeholder="City, neighborhood, or ZIP"
+          value={search}
+          onChange={(event) => setSearch(event.target.value)}
+          placeholder="City or neighborhood"
           className={fieldClass}
         />
       </div>
@@ -36,9 +53,14 @@ export function SearchFilterBar() {
         <label htmlFor={typeId} className={labelClass}>
           Property Type
         </label>
-        <select id={typeId} className={fieldClass} defaultValue={propertyTypes[0]}>
-          {propertyTypes.map((type) => (
-            <option key={type}>{type}</option>
+        <select
+          id={typeId}
+          value={type}
+          onChange={(event) => setType(event.target.value)}
+          className={fieldClass}
+        >
+          {propertyTypes.map((option) => (
+            <option key={option}>{option}</option>
           ))}
         </select>
       </div>
@@ -47,9 +69,14 @@ export function SearchFilterBar() {
         <label htmlFor={priceId} className={labelClass}>
           Price Range
         </label>
-        <select id={priceId} className={fieldClass} defaultValue={priceRanges[0]}>
-          {priceRanges.map((range) => (
-            <option key={range}>{range}</option>
+        <select
+          id={priceId}
+          value={price}
+          onChange={(event) => setPrice(event.target.value)}
+          className={fieldClass}
+        >
+          {BUY_PRICE_OPTIONS.map((option) => (
+            <option key={option}>{option}</option>
           ))}
         </select>
       </div>

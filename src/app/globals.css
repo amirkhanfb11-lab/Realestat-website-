@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 /* ---------------------------------------------------------------------
-   Abusalam Real Estate — Design Tokens
+   Abu Salem Real Estate — Design Tokens
    "Trustworthy luxury": deep navy + warm gold + ivory.
    Tailwind v4 reads this @theme block to generate matching utilities
    (e.g. --color-gold-500 -> bg-gold-500, text-gold-500, border-gold-500).
@@ -15,7 +15,8 @@
 
   --color-gold-400: #d4b578;
   --color-gold-500: #c6a15b;
-  --color-gold-600: #ae8a46;
+  /* Darkened from #ae8a46 — the original failed WCAG AA (~3:1) as text on light backgrounds. */
+  --color-gold-600: #7f6035;
 
   --color-ivory-50: #faf8f3;
   --color-ivory-100: #f1ece1;

@@ -27,13 +27,13 @@ export function Hero() {
         <Container className="relative py-24 sm:py-28">
           <div className="flex max-w-2xl flex-col items-start">
             <span className="mb-4 inline-flex items-center gap-2 rounded-full border border-gold-500/40 px-4 py-1 text-xs font-medium uppercase tracking-widest text-gold-400 animate-fade-in-up">
-              Est. Excellence in Real Estate
+              Al Ain&apos;s Property Partner Since 1994
             </span>
             <h1 className="font-serif text-4xl leading-tight sm:text-5xl lg:text-6xl animate-fade-in-up">
               Find a home that feels extraordinary.
             </h1>
             <p className="mt-6 max-w-xl text-base text-ivory-50/85 sm:text-lg animate-fade-in-up">
-              Abusalam Real Estate pairs curated listings with attentive, trusted guidance — from
+              Abu Salem Real Estate pairs curated listings with attentive, trusted guidance — from
               first showing to closing day.
             </p>
             <div className="mt-10 animate-fade-in-up">

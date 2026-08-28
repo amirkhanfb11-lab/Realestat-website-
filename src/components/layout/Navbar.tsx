@@ -1,7 +1,9 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/Button";
 import { Container } from "./Container";
@@ -9,12 +11,18 @@ import { Container } from "./Container";
 const links = [
   { label: "Home", href: "/" },
   { label: "Properties", href: "/properties" },
+  { label: "Services", href: "/services" },
   { label: "About", href: "/about" },
-  { label: "Agents", href: "/agents" },
   { label: "Contact", href: "/contact" },
 ];
 
+function isActiveLink(pathname: string, href: string) {
+  if (href === "/") return pathname === "/";
+  return pathname === href || pathname.startsWith(`${href}/`);
+}
+
 export function Navbar() {
+  const pathname = usePathname();
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
 
@@ -52,23 +60,37 @@ export function Navbar() {
     >
       <Container>
         <nav className="flex h-20 items-center justify-between" aria-label="Primary">
-          <Link href="/" className="flex items-center gap-2" onClick={() => setOpen(false)}>
-            <span className="h-2 w-2 rounded-full bg-gold-500" aria-hidden="true" />
+          <Link href="/" className="flex items-center gap-3" onClick={() => setOpen(false)}>
+            <Image
+              src="/logo/abu-salem-logo.jpg"
+              alt="Abu Salem Real Estate"
+              width={44}
+              height={44}
+              className="h-11 w-11 rounded-lg border border-border object-contain"
+              priority
+            />
             <span className="font-serif text-xl tracking-tight text-navy-950">
-              Abusalam <span className="text-gold-600">Real Estate</span>
+              Abu Salem <span className="text-gold-600">Real Estate</span>
             </span>
           </Link>
 
           <div className="hidden items-center gap-10 md:flex">
-            {links.map((link) => (
-              <Link
-                key={link.href}
-                href={link.href}
-                className="text-sm font-medium text-navy-950/80 transition-colors hover:text-gold-600"
-              >
-                {link.label}
-              </Link>
-            ))}
+            {links.map((link) => {
+              const active = isActiveLink(pathname, link.href);
+              return (
+                <Link
+                  key={link.href}
+                  href={link.href}
+                  aria-current={active ? "page" : undefined}
+                  className={cn(
+                    "text-sm font-medium transition-colors hover:text-gold-600",
+                    active ? "text-gold-600" : "text-navy-950/80"
+                  )}
+                >
+                  {link.label}
+                </Link>
+              );
+            })}
           </div>
 
           <div className="hidden md:block">
@@ -113,16 +135,23 @@ export function Navbar() {
       >
         <Container>
           <div className="flex flex-col gap-1 border-t border-border py-4">
-            {links.map((link) => (
-              <Link
-                key={link.href}
-                href={link.href}
-                onClick={() => setOpen(false)}
-                className="rounded-lg px-3 py-3 text-sm font-medium text-navy-950 transition-colors hover:bg-ivory-100"
-              >
-                {link.label}
-              </Link>
-            ))}
+            {links.map((link) => {
+              const active = isActiveLink(pathname, link.href);
+              return (
+                <Link
+                  key={link.href}
+                  href={link.href}
+                  onClick={() => setOpen(false)}
+                  aria-current={active ? "page" : undefined}
+                  className={cn(
+                    "rounded-lg px-3 py-3 text-sm font-medium transition-colors hover:bg-ivory-100",
+                    active ? "text-gold-600" : "text-navy-950"
+                  )}
+                >
+                  {link.label}
+                </Link>
+              );
+            })}
             <Button href="/contact" className="mt-2" onClick={() => setOpen(false)}>
               Get in Touch
             </Button>

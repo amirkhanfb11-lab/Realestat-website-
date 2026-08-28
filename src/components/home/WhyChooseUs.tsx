@@ -5,7 +5,7 @@ const reasons = [
   {
     title: "Trusted Expertise",
     description:
-      "18+ years guiding buyers and sellers through every market cycle with steady, informed advice.",
+      "Serving Al Ain since 1994, guiding buyers and sellers through every market cycle with steady, informed advice.",
     icon: (
       <>
         <path d="M12 3l7 3v5c0 4.5-3 8-7 10-4-2-7-5.5-7-10V6l7-3Z" strokeLinejoin="round" />
@@ -51,7 +51,7 @@ export function WhyChooseUs() {
     <Section background="muted" spacing="lg">
       <Reveal className="mx-auto max-w-2xl text-center">
         <p className="text-xs font-semibold uppercase tracking-widest text-gold-600">
-          Why Abusalam
+          Why Abu Salem
         </p>
         <h2 className="mt-3 text-3xl text-navy-950 sm:text-4xl">
           Trust, built one closing at a time

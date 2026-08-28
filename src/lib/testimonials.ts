@@ -10,7 +10,7 @@ export const testimonials: Testimonial[] = [
     name: "Sarah Whitfield",
     location: "Los Angeles, CA",
     quote:
-      "Abusalam made buying our first home feel effortless. Every question was answered before we even had to ask, and we never once felt pressured.",
+      "Abu Salem made buying our first home feel effortless. Every question was answered before we even had to ask, and we never once felt pressured.",
     initials: "SW",
   },
   {

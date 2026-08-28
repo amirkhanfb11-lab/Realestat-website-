@@ -17,19 +17,18 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://www.abusalamrealestate.com"),
   title: {
-    default: "Abusalam Real Estate | Premium Properties",
-    template: "%s | Abusalam Real Estate",
+    default: "Abu Salem Real Estate | Al Ain Property Experts",
+    template: "%s | Abu Salem Real Estate",
   },
   description:
-    "Abusalam Real Estate connects discerning buyers and sellers with exceptional homes, backed by trusted local expertise.",
+    "Abu Salem Real Estate is Al Ain's trusted property partner since 1994 — buying, selling, renting, property management, valuation, and consulting.",
   openGraph: {
-    title: "Abusalam Real Estate",
+    title: "Abu Salem Real Estate",
     description:
-      "Discover exceptional homes and trusted real estate guidance with Abusalam Real Estate.",
+      "Al Ain's trusted property partner since 1994 — buying, selling, renting, property management, valuation, and consulting.",
     type: "website",
-    siteName: "Abusalam Real Estate",
+    siteName: "Abu Salem Real Estate",
   },
   robots: {
     index: true,
