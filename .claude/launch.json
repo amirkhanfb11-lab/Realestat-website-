@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "abusalam-dev",
+      "runtimeExecutable": "C:\\Users\\DELL\\Desktop\\1project Realestat\\.claude\\dev.bat",
+      "runtimeArgs": [],
+      "port": 3000
+    }
+  ]
+}

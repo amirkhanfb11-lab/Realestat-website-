@@ -1,0 +1,116 @@
+@import "tailwindcss";
+
+/* ---------------------------------------------------------------------
+   Abusalam Real Estate — Design Tokens
+   "Trustworthy luxury": deep navy + warm gold + ivory.
+   Tailwind v4 reads this @theme block to generate matching utilities
+   (e.g. --color-gold-500 -> bg-gold-500, text-gold-500, border-gold-500).
+--------------------------------------------------------------------- */
+@theme {
+  /* Color palette */
+  --color-navy-950: #0b1220;
+  --color-navy-900: #101a2e;
+  --color-navy-800: #182544;
+  --color-navy-700: #22335c;
+
+  --color-gold-400: #d4b578;
+  --color-gold-500: #c6a15b;
+  --color-gold-600: #ae8a46;
+
+  --color-ivory-50: #faf8f3;
+  --color-ivory-100: #f1ece1;
+
+  --color-charcoal-900: #1c1c1e;
+  --color-gray-500: #6b7280;
+  --color-gray-200: #e5e7eb;
+
+  --color-border: #e4dfd3;
+
+  /* Typography */
+  --font-serif: var(--font-fraunces), Georgia, "Times New Roman", serif;
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, -apple-system,
+    sans-serif;
+
+  /* Elevation */
+  --shadow-soft: 0 2px 12px rgba(11, 18, 32, 0.06);
+  --shadow-elevated: 0 20px 45px -18px rgba(11, 18, 32, 0.35);
+
+  /* Motion */
+  --animate-fade-in-up: fade-in-up 0.7s cubic-bezier(0.16, 1, 0.3, 1) both;
+  --ease-premium: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ---------------------------------------------------------------------
+   Base styles
+--------------------------------------------------------------------- */
+@layer base {
+  * {
+    border-color: var(--color-border);
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: var(--color-ivory-50);
+    color: var(--color-charcoal-900);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: var(--font-serif);
+    letter-spacing: -0.01em;
+    line-height: 1.15;
+  }
+
+  ::selection {
+    background-color: var(--color-gold-400);
+    color: var(--color-navy-950);
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-gold-500);
+    outline-offset: 3px;
+  }
+}
+
+/* ---------------------------------------------------------------------
+   Shared utility classes
+--------------------------------------------------------------------- */
+@layer utilities {
+  .shadow-soft {
+    box-shadow: var(--shadow-soft);
+  }
+
+  .shadow-elevated {
+    box-shadow: var(--shadow-elevated);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
