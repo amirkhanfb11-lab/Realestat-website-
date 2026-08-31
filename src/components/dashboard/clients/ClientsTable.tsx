@@ -53,7 +53,7 @@ export function ClientsTable({
             <span className="text-xs text-gray-500">{agentName(client.agentId)}</span>
           </div>
 
-          <div className="flex-none text-xs text-gray-400 sm:w-20 sm:text-right">
+          <div className="flex-none text-xs text-gray-500 sm:w-20 sm:text-right">
             {client.notes.length} {client.notes.length === 1 ? "note" : "notes"}
           </div>
         </button>

@@ -159,7 +159,7 @@ export function LeadDetailPanel({ lead, onClose }: { lead: Lead | null; onClose:
                   onChange={(event) => updateLead(lead.id, { followUpDate: event.target.value || null })}
                   className={fieldClass}
                 />
-                <p className="mt-1.5 text-xs text-gray-400">{formatLongDate(lead.followUpDate)}</p>
+                <p className="mt-1.5 text-xs text-gray-500">{formatLongDate(lead.followUpDate)}</p>
               </div>
             </div>
 
@@ -167,7 +167,7 @@ export function LeadDetailPanel({ lead, onClose }: { lead: Lead | null; onClose:
               <p className={labelClass}>Contact</p>
               <p className="mt-2 text-sm text-charcoal-900">{lead.phone}</p>
               <p className="text-sm text-charcoal-900">{lead.email}</p>
-              <p className="mt-2 text-xs text-gray-400">Received {formatLongDate(lead.createdAt)}</p>
+              <p className="mt-2 text-xs text-gray-500">Received {formatLongDate(lead.createdAt)}</p>
             </div>
 
             <div className="mt-6 border-t border-border pt-5">
@@ -196,13 +196,13 @@ export function LeadDetailPanel({ lead, onClose }: { lead: Lead | null; onClose:
               </div>
 
               {lead.notes.length === 0 ? (
-                <p className="mt-4 text-sm text-gray-400">No notes yet.</p>
+                <p className="mt-4 text-sm text-gray-500">No notes yet.</p>
               ) : (
                 <ul className="mt-4 space-y-3">
                   {lead.notes.map((note) => (
                     <li key={note.id} className="rounded-lg bg-ivory-100 p-3 text-sm text-charcoal-900">
                       <p>{note.text}</p>
-                      <p className="mt-1 text-xs text-gray-400">{note.date}</p>
+                      <p className="mt-1 text-xs text-gray-500">{note.date}</p>
                     </li>
                   ))}
                 </ul>

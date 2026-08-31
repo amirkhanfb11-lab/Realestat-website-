@@ -58,7 +58,7 @@ export function LeadsTable({
             <span className="text-xs text-gray-500">{agentName(lead.agentId)}</span>
           </div>
 
-          <div className="flex-none text-xs text-gray-400 sm:w-28 sm:text-right">
+          <div className="flex-none text-xs text-gray-500 sm:w-28 sm:text-right">
             <p>Received {formatDate(lead.createdAt)}</p>
             <p>Follow-up {formatDate(lead.followUpDate)}</p>
           </div>

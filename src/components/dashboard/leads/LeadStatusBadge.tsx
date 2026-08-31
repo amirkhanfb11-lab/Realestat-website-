@@ -6,7 +6,7 @@ const styles: Record<LeadStatus, string> = {
   "Viewing Scheduled": "bg-blue-50 text-blue-700",
   Negotiating: "bg-amber-50 text-amber-700",
   Converted: "bg-green-50 text-green-700",
-  Lost: "bg-red-50 text-red-600",
+  Lost: "bg-red-50 text-red-700",
 };
 
 export function LeadStatusBadge({ status }: { status: LeadStatus }) {

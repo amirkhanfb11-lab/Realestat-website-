@@ -349,7 +349,7 @@ export function PropertyForm({ mode, property }: { mode: "create" | "edit"; prop
 
         <div className="sm:col-span-2">
           <label htmlFor={ids.images} className={labelClass}>
-            Images <span className="normal-case text-gray-400">(one URL per line, images.unsplash.com)</span>
+            Images <span className="normal-case text-gray-500">(one URL per line, images.unsplash.com)</span>
           </label>
           <textarea
             id={ids.images}
@@ -363,7 +363,7 @@ export function PropertyForm({ mode, property }: { mode: "create" | "edit"; prop
 
         <div className="sm:col-span-2">
           <label htmlFor={ids.amenities} className={labelClass}>
-            Amenities <span className="normal-case text-gray-400">(comma separated)</span>
+            Amenities <span className="normal-case text-gray-500">(comma separated)</span>
           </label>
           <input
             id={ids.amenities}

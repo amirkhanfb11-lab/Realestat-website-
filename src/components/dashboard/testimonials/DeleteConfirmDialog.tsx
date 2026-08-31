@@ -5,12 +5,12 @@ import { Button } from "@/components/ui/Button";
 
 export function DeleteConfirmDialog({
   open,
-  propertyTitle,
+  itemLabel,
   onCancel,
   onConfirm,
 }: {
   open: boolean;
-  propertyTitle: string;
+  itemLabel: string;
   onCancel: () => void;
   onConfirm: () => void;
 }) {
@@ -44,14 +44,14 @@ export function DeleteConfirmDialog({
       <div
         role="alertdialog"
         aria-modal="true"
-        aria-labelledby="delete-dialog-title"
+        aria-labelledby="delete-testimonial-title"
         className="relative w-full max-w-sm rounded-2xl bg-white p-6 shadow-elevated"
       >
-        <h3 id="delete-dialog-title" className="text-base font-semibold text-navy-950">
-          Delete property?
+        <h3 id="delete-testimonial-title" className="text-base font-semibold text-navy-950">
+          Delete testimonial?
         </h3>
         <p className="mt-2 text-sm text-gray-500">
-          This will permanently remove &ldquo;{propertyTitle}&rdquo; from the list. This can&apos;t be undone.
+          This will permanently remove &ldquo;{itemLabel}&rdquo;&apos;s testimonial. This can&apos;t be undone.
         </p>
         <div className="mt-6 flex gap-3">
           <button

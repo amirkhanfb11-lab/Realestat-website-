@@ -75,7 +75,7 @@ export function LeadsExplorer() {
         {filtered.length} {filtered.length === 1 ? "lead" : "leads"}
       </p>
 
-      <div className="mt-4 lg:grid lg:grid-cols-[1fr_380px] lg:items-start lg:gap-6">
+      <div className="mt-4 lg:grid lg:grid-cols-[minmax(0,1fr)_380px] lg:items-start lg:gap-6">
         <LeadsTable leads={filtered} selectedId={selectedId} onSelect={setSelectedId} />
         <LeadDetailPanel lead={selectedLead} onClose={() => setSelectedId(null)} />
       </div>

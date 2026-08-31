@@ -80,7 +80,7 @@ export function ClientsExplorer() {
         {filtered.length} {filtered.length === 1 ? "client" : "clients"}
       </p>
 
-      <div className="mt-4 lg:grid lg:grid-cols-[1fr_380px] lg:items-start lg:gap-6">
+      <div className="mt-4 lg:grid lg:grid-cols-[minmax(0,1fr)_380px] lg:items-start lg:gap-6">
         <ClientsTable clients={filtered} selectedId={mode === "view" ? selectedId : null} onSelect={handleSelect} />
         <ClientDetailPanel
           client={selectedClient}

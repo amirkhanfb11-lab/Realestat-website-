@@ -157,7 +157,7 @@ export function ClientDetailPanel({
 
             <div className="mt-4 flex items-center gap-3">
               <ClientTypeBadge type={client.type} />
-              <span className="text-xs text-gray-400">Client since {formatLongDate(client.createdAt)}</span>
+              <span className="text-xs text-gray-500">Client since {formatLongDate(client.createdAt)}</span>
             </div>
 
             <div className="mt-5 grid grid-cols-2 gap-2">
@@ -220,13 +220,13 @@ export function ClientDetailPanel({
               </div>
 
               {client.notes.length === 0 ? (
-                <p className="mt-4 text-sm text-gray-400">No notes yet.</p>
+                <p className="mt-4 text-sm text-gray-500">No notes yet.</p>
               ) : (
                 <ul className="mt-4 space-y-3">
                   {client.notes.map((note) => (
                     <li key={note.id} className="rounded-lg bg-ivory-100 p-3 text-sm text-charcoal-900">
                       <p>{note.text}</p>
-                      <p className="mt-1 text-xs text-gray-400">{note.date}</p>
+                      <p className="mt-1 text-xs text-gray-500">{note.date}</p>
                     </li>
                   ))}
                 </ul>

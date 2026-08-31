@@ -22,7 +22,7 @@ export function RecentLeads({ leads }: { leads: Lead[] }) {
               <p className="mt-0.5 truncate text-xs text-gray-500">
                 Interested in {lead.interest} · {lead.type}
               </p>
-              <p className="mt-0.5 text-xs text-gray-400">{lead.date}</p>
+              <p className="mt-0.5 text-xs text-gray-500">{lead.date}</p>
             </div>
             <span className={`flex-none rounded-full px-2.5 py-0.5 text-[11px] font-medium ${statusStyles[lead.status]}`}>
               {lead.status}
