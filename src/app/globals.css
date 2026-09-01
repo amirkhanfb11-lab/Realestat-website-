@@ -2,30 +2,34 @@
 
 /* ---------------------------------------------------------------------
    Abu Salem Real Estate — Design Tokens
-   "Trustworthy luxury": deep navy + warm gold + ivory.
+   "Modern premium": deep ocean blue + soft gray + white/light-neutral.
    Tailwind v4 reads this @theme block to generate matching utilities
    (e.g. --color-gold-500 -> bg-gold-500, text-gold-500, border-gold-500).
+   Token names (navy/gold/ivory) are kept from the original palette so
+   every existing component class keeps working — only the hex values
+   changed, from warm navy+gold+ivory to cool ocean-blue+soft-gray+white.
 --------------------------------------------------------------------- */
 @theme {
   /* Color palette */
-  --color-navy-950: #0b1220;
-  --color-navy-900: #101a2e;
-  --color-navy-800: #182544;
-  --color-navy-700: #22335c;
+  --color-navy-950: #0a2540;
+  --color-navy-900: #123655;
+  --color-navy-800: #1b4a6e;
+  --color-navy-700: #235e89;
 
-  --color-gold-400: #d4b578;
-  --color-gold-500: #c6a15b;
-  /* Darkened from #ae8a46 — the original failed WCAG AA (~3:1) as text on light backgrounds. */
-  --color-gold-600: #7f6035;
+  /* Soft gray accent scale (replaces the former warm gold accent). */
+  --color-gold-400: #a9b4bf;
+  --color-gold-500: #828f9c;
+  /* Darkened for text use — passes WCAG AA (~7:1) on white/light-neutral backgrounds. */
+  --color-gold-600: #4f5b66;
 
-  --color-ivory-50: #faf8f3;
-  --color-ivory-100: #f1ece1;
+  --color-ivory-50: #f7f8fa;
+  --color-ivory-100: #edf0f3;
 
-  --color-charcoal-900: #1c1c1e;
-  --color-gray-500: #6b7280;
-  --color-gray-200: #e5e7eb;
+  --color-charcoal-900: #26313a;
+  --color-gray-500: #5b6b7c;
+  --color-gray-200: #e2e8f0;
 
-  --color-border: #e4dfd3;
+  --color-border: #e1e5ea;
 
   /* Typography */
   --font-serif: var(--font-fraunces), Georgia, "Times New Roman", serif;
@@ -33,8 +37,8 @@
     sans-serif;
 
   /* Elevation */
-  --shadow-soft: 0 2px 12px rgba(11, 18, 32, 0.06);
-  --shadow-elevated: 0 20px 45px -18px rgba(11, 18, 32, 0.35);
+  --shadow-soft: 0 2px 12px rgba(10, 37, 64, 0.06);
+  --shadow-elevated: 0 20px 45px -18px rgba(10, 37, 64, 0.35);
 
   /* Motion */
   --animate-fade-in-up: fade-in-up 0.7s cubic-bezier(0.16, 1, 0.3, 1) both;

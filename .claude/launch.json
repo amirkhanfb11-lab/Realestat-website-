@@ -6,6 +6,12 @@
       "runtimeExecutable": "C:\\Users\\DELL\\Desktop\\1project Realestat\\.claude\\dev.bat",
       "runtimeArgs": [],
       "port": 3000
+    },
+    {
+      "name": "static-out",
+      "runtimeExecutable": "C:\\Users\\DELL\\Desktop\\1project Realestat\\.claude\\serve-out.bat",
+      "runtimeArgs": [],
+      "port": 4173
     }
   ]
 }

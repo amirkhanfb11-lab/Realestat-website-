@@ -20,7 +20,7 @@ export function PropertyRow({
 }) {
   return (
     <div className="flex flex-col gap-4 rounded-2xl bg-white p-4 shadow-soft sm:flex-row sm:items-center">
-      <Link href={`/dashboard/properties/${property.id}`} className="flex flex-1 items-center gap-4 min-w-0">
+      <Link href={`/dashboard/properties/edit?id=${property.id}`} className="flex flex-1 items-center gap-4 min-w-0">
         <div className="relative h-16 w-16 flex-none overflow-hidden rounded-lg">
           <Image src={property.images[0]} alt={property.title} fill sizes="64px" className="object-cover" />
         </div>
@@ -72,7 +72,7 @@ export function PropertyRow({
         </select>
 
         <div className="flex items-center gap-3 text-xs font-medium">
-          <Link href={`/dashboard/properties/${property.id}`} className="text-gold-600 hover:underline">
+          <Link href={`/dashboard/properties/edit?id=${property.id}`} className="text-gold-600 hover:underline">
             Edit
           </Link>
           <button type="button" onClick={onDelete} className="text-red-600 hover:underline">

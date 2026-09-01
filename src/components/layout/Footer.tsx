@@ -129,7 +129,7 @@ export function Footer() {
               />
               <button
                 type="button"
-                className="shrink-0 rounded-full bg-gold-500 px-4 py-2 text-sm font-medium text-navy-950 transition-colors hover:bg-gold-600"
+                className="shrink-0 rounded-full bg-gold-500 px-4 py-2 text-sm font-medium text-navy-950 transition-colors hover:bg-gold-400"
               >
                 Join
               </button>
@@ -137,16 +137,8 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="flex flex-col items-center justify-between gap-4 border-t border-ivory-50/10 py-6 text-xs text-ivory-50/50 sm:flex-row">
+        <div className="border-t border-ivory-50/10 py-6 text-center text-xs text-ivory-50/50 sm:text-left">
           <p>&copy; {new Date().getFullYear()} Abu Salem Real Estate. All rights reserved.</p>
-          <div className="flex gap-6">
-            <Link href="/privacy" className="transition-colors hover:text-ivory-50">
-              Privacy Policy
-            </Link>
-            <Link href="/terms" className="transition-colors hover:text-ivory-50">
-              Terms of Service
-            </Link>
-          </div>
         </div>
       </Container>
     </footer>

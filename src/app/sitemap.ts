@@ -1,6 +1,8 @@
 import type { MetadataRoute } from "next";
 import { properties } from "@/lib/properties";
 
+export const dynamic = "force-static";
+
 const SITE_URL = "https://abusalemrealestate.com";
 
 export default function sitemap(): MetadataRoute.Sitemap {

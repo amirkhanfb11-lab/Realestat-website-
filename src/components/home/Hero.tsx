@@ -19,7 +19,7 @@ export function Hero() {
           className="absolute inset-0"
           style={{
             background:
-              "linear-gradient(180deg, rgba(11,18,32,0.78) 0%, rgba(11,18,32,0.55) 45%, rgba(11,18,32,0.92) 100%)",
+              "linear-gradient(180deg, rgba(10,37,64,0.78) 0%, rgba(10,37,64,0.55) 45%, rgba(10,37,64,0.92) 100%)",
           }}
           aria-hidden="true"
         />
@@ -37,7 +37,7 @@ export function Hero() {
               first showing to closing day.
             </p>
             <div className="mt-10 animate-fade-in-up">
-              <Button href="#featured-properties" size="lg">
+              <Button href="/properties" size="lg">
                 Explore Properties
               </Button>
             </div>

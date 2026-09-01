@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { useRouter } from "next/navigation";
+import { useRouter, useSearchParams } from "next/navigation";
 import Link from "next/link";
 import type { PropertyStatus } from "@/lib/adminProperties";
 import { useProperties } from "./PropertiesProvider";
@@ -9,8 +9,10 @@ import { PropertyForm } from "./PropertyForm";
 import { PropertyStatusActions } from "./PropertyStatusActions";
 import { DeleteConfirmDialog } from "./DeleteConfirmDialog";
 
-export function PropertyEditClient({ id }: { id: string }) {
+export function PropertyEditClient() {
   const router = useRouter();
+  const searchParams = useSearchParams();
+  const id = searchParams.get("id") ?? "";
   const { getProperty, updateProperty, deleteProperty } = useProperties();
   const [confirmDelete, setConfirmDelete] = useState(false);
 

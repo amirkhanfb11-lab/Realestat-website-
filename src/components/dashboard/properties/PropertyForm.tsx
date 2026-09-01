@@ -153,7 +153,7 @@ export function PropertyForm({ mode, property }: { mode: "create" | "edit"; prop
 
     if (mode === "create") {
       const created = addProperty({ ...shared, status: values.status });
-      router.push(`/dashboard/properties/${created.id}`);
+      router.push(`/dashboard/properties/edit?id=${created.id}`);
       return;
     }
 

@@ -74,7 +74,7 @@ export function Navbar() {
             </span>
           </Link>
 
-          <div className="hidden items-center gap-10 md:flex">
+          <div className="hidden items-center gap-10 lg:flex">
             {links.map((link) => {
               const active = isActiveLink(pathname, link.href);
               return (
@@ -93,7 +93,7 @@ export function Navbar() {
             })}
           </div>
 
-          <div className="hidden md:block">
+          <div className="hidden lg:block">
             <Button href="/contact" size="sm">
               Get in Touch
             </Button>
@@ -105,7 +105,7 @@ export function Navbar() {
             aria-expanded={open}
             aria-controls="mobile-menu"
             onClick={() => setOpen((value) => !value)}
-            className="flex h-10 w-10 items-center justify-center rounded-full text-navy-950 transition-colors hover:bg-navy-950/5 md:hidden"
+            className="flex h-10 w-10 items-center justify-center rounded-full text-navy-950 transition-colors hover:bg-navy-950/5 lg:hidden"
           >
             <svg
               width="22"
@@ -129,7 +129,7 @@ export function Navbar() {
       <div
         id="mobile-menu"
         className={cn(
-          "overflow-hidden transition-[max-height,opacity] duration-300 ease-out md:hidden",
+          "overflow-hidden transition-[max-height,opacity] duration-300 ease-out lg:hidden",
           open ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
         )}
       >
