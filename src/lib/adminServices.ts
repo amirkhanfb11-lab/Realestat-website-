@@ -4,7 +4,7 @@ import type { ServiceIconKey } from "@/lib/serviceIcons";
 
 /**
  * Admin-side service records, seeded from the real public services
- * (`lib/services.tsx`) so the six actual Abu Salem offerings are what the
+ * (`lib/services.tsx`) so the six actual Sumalani offerings are what the
  * admin manages — not fabricated placeholders.
  *
  * Forward-compat note: this is intentionally shaped as a superset of the

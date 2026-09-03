@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { SettingsForm } from "@/components/dashboard/settings/SettingsForm";
 
 export const metadata: Metadata = {
-  title: { absolute: "Settings | Abu Salem Dashboard" },
+  title: { absolute: "Settings | Sumalani Dashboard" },
 };
 
 export default function DashboardSettingsPage() {

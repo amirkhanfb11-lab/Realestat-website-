@@ -16,14 +16,14 @@ function SidebarContent({ pathname, onNavigate }: { pathname: string; onNavigate
     <div className="flex h-full flex-col">
       <Link href="/dashboard" onClick={onNavigate} className="flex items-center gap-3 px-6 py-6">
         <Image
-          src="/logo/abu-salem-logo.jpg"
-          alt="Abu Salem Real Estate"
+          src="/logo/sumalani-logo.svg"
+          alt="Sumalani Real Estate"
           width={36}
           height={36}
           className="h-9 w-9 rounded-lg border border-ivory-50/20 object-contain"
         />
         <div className="leading-tight">
-          <p className="font-serif text-base text-ivory-50">Abu Salem</p>
+          <p className="font-serif text-base text-ivory-50">Sumalani</p>
           <p className="text-xs tracking-wide text-ivory-50/50">Admin Dashboard</p>
         </div>
       </Link>

@@ -7,7 +7,7 @@ import { PropertiesExplorer } from "@/components/property/PropertiesExplorer";
 export const metadata: Metadata = {
   title: "Properties",
   description:
-    "Browse Abu Salem Real Estate's full collection of homes for sale and rent — filter by location, type, and price.",
+    "Browse Sumalani Real Estate's full collection of homes for sale and rent — filter by location, type, and price.",
 };
 
 export default function PropertiesPage() {

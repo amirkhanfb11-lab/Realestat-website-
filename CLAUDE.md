@@ -15,7 +15,7 @@ There is no test suite configured in this repo.
 
 ## Architecture
 
-This is **Abu Salem Real Estate**, a marketing/listings website for a real estate agency in Al Ain, built with Next.js 15 (App Router), React 19, TypeScript, and Tailwind CSS v4.
+This is **Sumalani Real Estate**, a marketing/listings website for a real estate agency in Al Ain, built with Next.js 15 (App Router), React 19, TypeScript, and Tailwind CSS v4.
 
 ### Data layer: static, typed, in-repo (no backend/CMS)
 

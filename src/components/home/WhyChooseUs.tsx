@@ -51,7 +51,7 @@ export function WhyChooseUs() {
     <Section background="muted" spacing="lg">
       <Reveal className="mx-auto max-w-2xl text-center">
         <p className="text-xs font-semibold uppercase tracking-widest text-gold-600">
-          Why Abu Salem
+          Why Sumalani
         </p>
         <h2 className="mt-3 text-3xl text-navy-950 sm:text-4xl">
           Trust, built one closing at a time

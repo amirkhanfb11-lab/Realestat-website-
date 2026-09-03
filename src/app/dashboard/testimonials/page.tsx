@@ -3,7 +3,7 @@ import { TestimonialsProvider } from "@/components/dashboard/testimonials/Testim
 import { TestimonialsExplorer } from "@/components/dashboard/testimonials/TestimonialsExplorer";
 
 export const metadata: Metadata = {
-  title: { absolute: "Testimonials | Abu Salem Dashboard" },
+  title: { absolute: "Testimonials | Sumalani Dashboard" },
 };
 
 export default function DashboardTestimonialsPage() {

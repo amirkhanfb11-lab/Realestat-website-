@@ -3,7 +3,7 @@ import { Suspense } from "react";
 import { PropertyEditClient } from "@/components/dashboard/properties/PropertyEditClient";
 
 export const metadata: Metadata = {
-  title: { absolute: "Edit Property | Abu Salem Dashboard" },
+  title: { absolute: "Edit Property | Sumalani Dashboard" },
 };
 
 export default function EditPropertyPage() {

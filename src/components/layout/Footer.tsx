@@ -14,12 +14,12 @@ const quickLinks = [
 const socials = [
   {
     label: "Instagram",
-    href: "https://www.instagram.com/abusalemrealestate",
+    href: "https://www.instagram.com/sumalanirealestate",
     Icon: InstagramIcon,
   },
   {
     label: "TikTok",
-    href: "https://www.tiktok.com/@abusalemrealestate0",
+    href: "https://www.tiktok.com/@sumalanirealestate",
     Icon: TikTokIcon,
   },
   {
@@ -37,14 +37,14 @@ export function Footer() {
           <div className="sm:col-span-2 lg:col-span-1">
             <div className="flex items-center gap-3">
               <Image
-                src="/logo/abu-salem-logo.jpg"
-                alt="Abu Salem Real Estate"
+                src="/logo/sumalani-logo.svg"
+                alt="Sumalani Real Estate"
                 width={40}
                 height={40}
                 className="h-10 w-10 rounded-lg object-contain"
               />
               <span className="font-serif text-xl">
-                Abu Salem <span className="text-gold-500">Real Estate</span>
+                Sumalani <span className="text-gold-500">Real Estate</span>
               </span>
             </div>
             <p className="mt-4 max-w-xs text-sm leading-relaxed text-ivory-50/70">
@@ -138,7 +138,7 @@ export function Footer() {
         </div>
 
         <div className="border-t border-ivory-50/10 py-6 text-center text-xs text-ivory-50/50 sm:text-left">
-          <p>&copy; {new Date().getFullYear()} Abu Salem Real Estate. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Sumalani Real Estate. All rights reserved.</p>
         </div>
       </Container>
     </footer>

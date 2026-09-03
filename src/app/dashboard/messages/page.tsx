@@ -3,7 +3,7 @@ import { MessagesProvider } from "@/components/dashboard/messages/MessagesProvid
 import { MessagesExplorer } from "@/components/dashboard/messages/MessagesExplorer";
 
 export const metadata: Metadata = {
-  title: { absolute: "Messages | Abu Salem Dashboard" },
+  title: { absolute: "Messages | Sumalani Dashboard" },
 };
 
 export default function DashboardMessagesPage() {

@@ -4,7 +4,7 @@ import { AnalyticsChart } from "@/components/dashboard/AnalyticsChart";
 import { analyticsStats, leadsOverTime, propertyViewsTrend, salesRentalActivity } from "@/lib/analyticsData";
 
 export const metadata: Metadata = {
-  title: { absolute: "Analytics | Abu Salem Dashboard" },
+  title: { absolute: "Analytics | Sumalani Dashboard" },
 };
 
 export default function DashboardAnalyticsPage() {

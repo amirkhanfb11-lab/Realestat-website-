@@ -3,7 +3,7 @@ import { LeadsProvider } from "@/components/dashboard/leads/LeadsProvider";
 import { LeadsExplorer } from "@/components/dashboard/leads/LeadsExplorer";
 
 export const metadata: Metadata = {
-  title: { absolute: "Leads | Abu Salem Dashboard" },
+  title: { absolute: "Leads | Sumalani Dashboard" },
 };
 
 export default function LeadsPage() {

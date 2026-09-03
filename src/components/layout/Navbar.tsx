@@ -62,15 +62,15 @@ export function Navbar() {
         <nav className="flex h-20 items-center justify-between" aria-label="Primary">
           <Link href="/" className="flex items-center gap-3" onClick={() => setOpen(false)}>
             <Image
-              src="/logo/abu-salem-logo.jpg"
-              alt="Abu Salem Real Estate"
+              src="/logo/sumalani-logo.svg"
+              alt="Sumalani Real Estate"
               width={44}
               height={44}
               className="h-11 w-11 rounded-lg border border-border object-contain"
               priority
             />
             <span className="font-serif text-xl tracking-tight text-navy-950">
-              Abu Salem <span className="text-gold-600">Real Estate</span>
+              Sumalani <span className="text-gold-600">Real Estate</span>
             </span>
           </Link>
 

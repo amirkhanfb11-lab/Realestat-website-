@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { PropertyForm } from "@/components/dashboard/properties/PropertyForm";
 
 export const metadata: Metadata = {
-  title: { absolute: "Add Property | Abu Salem Dashboard" },
+  title: { absolute: "Add Property | Sumalani Dashboard" },
 };
 
 export default function NewPropertyPage() {

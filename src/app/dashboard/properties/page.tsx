@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { PropertiesExplorer } from "@/components/dashboard/properties/PropertiesExplorer";
 
 export const metadata: Metadata = {
-  title: { absolute: "Properties | Abu Salem Dashboard" },
+  title: { absolute: "Properties | Sumalani Dashboard" },
 };
 
 export default function DashboardPropertiesPage() {

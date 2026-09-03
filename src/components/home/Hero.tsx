@@ -33,7 +33,7 @@ export function Hero() {
               Find a home that feels extraordinary.
             </h1>
             <p className="mt-6 max-w-xl text-base text-ivory-50/85 sm:text-lg animate-fade-in-up">
-              Abu Salem Real Estate pairs curated listings with attentive, trusted guidance — from
+              Sumalani Real Estate pairs curated listings with attentive, trusted guidance — from
               first showing to closing day.
             </p>
             <div className="mt-10 animate-fade-in-up">

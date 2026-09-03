@@ -21,7 +21,7 @@ export default function Icon() {
           fontFamily: "Georgia, serif",
         }}
       >
-        AS
+        SR
       </div>
     ),
     size

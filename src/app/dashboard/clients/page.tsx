@@ -3,7 +3,7 @@ import { ClientsProvider } from "@/components/dashboard/clients/ClientsProvider"
 import { ClientsExplorer } from "@/components/dashboard/clients/ClientsExplorer";
 
 export const metadata: Metadata = {
-  title: { absolute: "Clients | Abu Salem Dashboard" },
+  title: { absolute: "Clients | Sumalani Dashboard" },
 };
 
 export default function ClientsPage() {

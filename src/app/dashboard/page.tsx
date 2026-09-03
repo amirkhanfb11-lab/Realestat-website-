@@ -8,7 +8,7 @@ import { RecentLeads } from "@/components/dashboard/RecentLeads";
 import { RecentProperties } from "@/components/dashboard/RecentProperties";
 
 export const metadata: Metadata = {
-  title: { absolute: "Overview | Abu Salem Dashboard" },
+  title: { absolute: "Overview | Sumalani Dashboard" },
 };
 
 export default function DashboardPage() {

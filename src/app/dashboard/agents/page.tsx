@@ -3,7 +3,7 @@ import { AgentsProvider } from "@/components/dashboard/agents/AgentsProvider";
 import { AgentsExplorer } from "@/components/dashboard/agents/AgentsExplorer";
 
 export const metadata: Metadata = {
-  title: { absolute: "Agents | Abu Salem Dashboard" },
+  title: { absolute: "Agents | Sumalani Dashboard" },
 };
 
 export default function AgentsPage() {

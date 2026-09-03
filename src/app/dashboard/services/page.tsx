@@ -3,7 +3,7 @@ import { ServicesProvider } from "@/components/dashboard/services/ServicesProvid
 import { ServicesExplorer } from "@/components/dashboard/services/ServicesExplorer";
 
 export const metadata: Metadata = {
-  title: { absolute: "Services | Abu Salem Dashboard" },
+  title: { absolute: "Services | Sumalani Dashboard" },
 };
 
 export default function DashboardServicesPage() {

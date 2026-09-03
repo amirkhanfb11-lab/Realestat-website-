@@ -12,10 +12,10 @@ export type Agent = {
 export const agents: Agent[] = [
   {
     id: "abu-salem-team",
-    name: "Abu Salem Real Estate",
+    name: "Sumalani Real Estate",
     title: "Sales & Leasing Team",
     phone: "+971 3 751 1410",
     whatsapp: "971508333410",
-    initials: "AS",
+    initials: "SR",
   },
 ];

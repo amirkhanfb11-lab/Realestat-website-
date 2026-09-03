@@ -9,8 +9,8 @@ const hours = [
 ];
 
 const socials = [
-  { label: "Instagram", href: "https://www.instagram.com/abusalemrealestate", Icon: InstagramIcon },
-  { label: "TikTok", href: "https://www.tiktok.com/@abusalemrealestate0", Icon: TikTokIcon },
+  { label: "Instagram", href: "https://www.instagram.com/sumalanirealestate", Icon: InstagramIcon },
+  { label: "TikTok", href: "https://www.tiktok.com/@sumalanirealestate", Icon: TikTokIcon },
 ];
 
 export function ContactInfo() {
@@ -40,10 +40,10 @@ export function ContactInfo() {
             <div>
               <p className="text-xs uppercase tracking-wider text-gray-500">Email</p>
               <a
-                href="mailto:info@abusalemrealestate.com"
+                href="mailto:info@sumalanirealestate.com"
                 className="font-medium transition-colors hover:text-gold-600"
               >
-                info@abusalemrealestate.com
+                info@sumalanirealestate.com
               </a>
             </div>
           </li>

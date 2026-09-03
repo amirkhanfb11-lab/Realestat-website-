@@ -26,13 +26,13 @@ export function AboutIntro() {
 
         <Reveal delay={100}>
           <p className="text-xs font-semibold uppercase tracking-widest text-gold-600">
-            About Abu Salem
+            About Sumalani
           </p>
           <h2 className="mt-3 text-3xl text-navy-950 sm:text-4xl">
             Over 30 years of trusted real estate expertise
           </h2>
           <p className="mt-5 text-base leading-relaxed text-gray-600">
-            Abu Salem Real Estate has served Al Ain since 1994, helping families and investors
+            Sumalani Real Estate has served Al Ain since 1994, helping families and investors
             buy, sell, rent, and manage property across the city. Our team combines decades of
             local market knowledge with a hands-on, honest approach — from first inquiry to final
             signature.

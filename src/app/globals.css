@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 /* ---------------------------------------------------------------------
-   Abu Salem Real Estate — Design Tokens
+   Sumalani Real Estate — Design Tokens
    "Modern premium": deep ocean blue + soft gray + white/light-neutral.
    Tailwind v4 reads this @theme block to generate matching utilities
    (e.g. --color-gold-500 -> bg-gold-500, text-gold-500, border-gold-500).

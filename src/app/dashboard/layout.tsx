@@ -4,7 +4,7 @@ import { DashboardShell } from "@/components/dashboard/DashboardShell";
 export const metadata: Metadata = {
   title: {
     default: "Dashboard",
-    template: "%s | Abu Salem Dashboard",
+    template: "%s | Sumalani Dashboard",
   },
   robots: {
     index: false,

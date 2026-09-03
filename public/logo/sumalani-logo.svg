@@ -1,0 +1,22 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Sumalani Real Estate">
+  <rect width="240" height="240" fill="#FFFFFF" />
+
+  <!-- "1994" established badge -->
+  <rect x="97" y="18" width="46" height="18" rx="9" fill="#EDF0F3" />
+  <text x="120" y="31" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="11" font-weight="600" fill="#4F5B66" letter-spacing="0.5">1994</text>
+
+  <!-- Roofline / skyline mark -->
+  <g fill="none" stroke="#0A2540" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M60 108 L88 78 L116 108" />
+    <path d="M92 108 L120 72 L148 108" />
+    <path d="M124 108 L152 82 L180 108" />
+  </g>
+  <rect x="56" y="106" width="128" height="7" rx="3.5" fill="#0A2540" />
+
+  <!-- Wordmark -->
+  <text x="120" y="152" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="26" font-weight="700" fill="#0A2540">Sumalani</text>
+  <text x="120" y="176" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="19" fill="#4F5B66" letter-spacing="0.5">Real Estate</text>
+
+  <!-- Arabic subtitle -->
+  <text x="120" y="204" text-anchor="middle" font-family="'Segoe UI', Tahoma, Arial, sans-serif" font-size="13" fill="#5B6B7C">مؤسسة سومالاني للعقارات</text>
+</svg>

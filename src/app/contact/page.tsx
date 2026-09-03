@@ -8,7 +8,7 @@ import { MapEmbed } from "@/components/contact/MapEmbed";
 export const metadata: Metadata = {
   title: "Contact Us",
   description:
-    "Get in touch with Abu Salem Real Estate in Al Ain — call, WhatsApp, or send us a message about buying, selling, renting, or managing property.",
+    "Get in touch with Sumalani Real Estate in Al Ain — call, WhatsApp, or send us a message about buying, selling, renting, or managing property.",
 };
 
 export default function ContactPage() {

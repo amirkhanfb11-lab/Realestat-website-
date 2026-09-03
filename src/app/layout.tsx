@@ -17,17 +17,17 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: {
-    default: "Abu Salem Real Estate | Al Ain Property Experts",
-    template: "%s | Abu Salem Real Estate",
+    default: "Sumalani Real Estate | Al Ain Property Experts",
+    template: "%s | Sumalani Real Estate",
   },
   description:
-    "Abu Salem Real Estate is Al Ain's trusted property partner since 1994 — buying, selling, renting, property management, valuation, and consulting.",
+    "Sumalani Real Estate is Al Ain's trusted property partner since 1994 — buying, selling, renting, property management, valuation, and consulting.",
   openGraph: {
-    title: "Abu Salem Real Estate",
+    title: "Sumalani Real Estate",
     description:
       "Al Ain's trusted property partner since 1994 — buying, selling, renting, property management, valuation, and consulting.",
     type: "website",
-    siteName: "Abu Salem Real Estate",
+    siteName: "Sumalani Real Estate",
   },
   robots: {
     index: true,

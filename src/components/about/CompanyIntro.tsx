@@ -25,7 +25,7 @@ export function CompanyIntro() {
           </h2>
           <p className="mt-5 text-base leading-relaxed text-gray-500">
             What began as a small local office in Al Sarouj has grown into one of Al Ain&apos;s
-            most trusted names in real estate. For over three decades, Abu Salem Real Estate has
+            most trusted names in real estate. For over three decades, Sumalani Real Estate has
             helped families find homes, investors build portfolios, and landlords manage their
             properties with confidence.
           </p>

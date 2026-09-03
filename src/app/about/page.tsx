@@ -12,7 +12,7 @@ import { CTASection } from "@/components/home/CTASection";
 export const metadata: Metadata = {
   title: "About Us",
   description:
-    "Abu Salem Real Estate has served Al Ain since 1994 — learn about our mission, values, and the team behind every transaction.",
+    "Sumalani Real Estate has served Al Ain since 1994 — learn about our mission, values, and the team behind every transaction.",
 };
 
 export default function AboutPage() {

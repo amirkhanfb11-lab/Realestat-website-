@@ -8,7 +8,7 @@ import { services } from "@/lib/services";
 export const metadata: Metadata = {
   title: "Services",
   description:
-    "Abu Salem Real Estate's full range of services in Al Ain — buying, selling, rental, property management, real estate consultation, and investment consultation.",
+    "Sumalani Real Estate's full range of services in Al Ain — buying, selling, rental, property management, real estate consultation, and investment consultation.",
 };
 
 const WHATSAPP_HREF = "https://wa.me/971508333410";
